@@ -1,0 +1,16 @@
+h2{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div{
+    border: 1px solid red;
+}
+
+.custom-card {
+    --p-card-background: #a857aa;
+    --p-card-border-radius: 16px;
+    --p-card-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    --p-card-width: 100px; 
+  }

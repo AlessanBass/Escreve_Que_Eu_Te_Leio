@@ -1,0 +1,17 @@
+header{
+  /*   border:  1px solid red; */
+    background: url("/fundo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100px;
+    padding: 10px;
+}
+
+section{
+    border-top: 1px solid rgb(175, 174, 174);
+    border-bottom: 1px solid rgb(175, 174, 174);
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: 10px;
+}

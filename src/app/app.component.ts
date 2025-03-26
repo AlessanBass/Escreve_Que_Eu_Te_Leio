@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DadosService } from '../services/dadosService';
 
 @Component({
     selector: 'app-root',
@@ -6,6 +7,15 @@ import { Component } from '@angular/core';
     styleUrl: './app.component.scss',
     standalone: false
 })
-export class AppComponent {
-  title = 'Escreve Que Eu Te Leio';
+export class AppComponent implements OnInit{
+  dados: any[] = [];
+
+  constructor(private dadosService: DadosService) {}
+
+  ngOnInit() {
+    this.dadosService.getDados().subscribe((response) => {
+      this.dados = response;
+      console.log(this.dados);
+    });
+  }
 }
